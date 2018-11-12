@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+   <GridLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/grid"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_centerVertical="true"
+       android:background="@drawable/board0"
+       android:rowCount="3"
+       android:columnCount="3"
+
+       >
+
+       <ImageView
+           android:id="@+id/imga1"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+
+           android:layout_column="0"
+           android:layout_row="0"
+           android:onClick="fade"
+           android:tag="0"
+           />
+
+       <ImageView
+           android:id="@+id/imga3"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="1"
+           android:layout_row="0"
+
+           android:onClick="fade"
+           android:tag="1"/>
+
+       <ImageView
+           android:id="@+id/imga4"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="2"
+           android:layout_row="0"
+           android:layout_marginLeft="17dp"
+           android:layout_marginTop="12dp"
+           android:onClick="fade"
+           android:tag="2"/>
+       <ImageView
+           android:id="@+id/imga5"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_marginLeft="3dp"
+           android:layout_marginTop="24dp"
+           android:layout_column="0"
+           android:layout_row="1"
+           android:onClick="fade"
+
+           android:tag="3"/>
+
+       <ImageView
+           android:id="@+id/imga6"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="1"
+           android:layout_row="1"
+           android:layout_marginLeft="7dp"
+           android:layout_marginTop="24dp"
+           android:onClick="fade"
+           android:tag="4"/>
+
+       <ImageView
+           android:id="@+id/imga7"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="2"
+           android:layout_row="1"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="24dp"
+           android:onClick="fade"
+           android:tag="5"/>
+       <ImageView
+           android:id="@+id/imga8"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_marginLeft="3dp"
+           android:layout_marginTop="24dp"
+           android:layout_column="0"
+           android:layout_row="2"
+           android:onClick="fade"
+           android:tag="6"/>
+
+       <ImageView
+           android:id="@+id/imga9"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="1"
+           android:layout_row="2"
+           android:layout_marginLeft="12dp"
+           android:layout_marginTop="24dp"
+           android:onClick="fade"
+           android:tag="7"/>
+
+       <ImageView
+           android:id="@+id/imga10"
+           android:layout_width="110dp"
+           android:layout_height="110dp"
+           android:layout_column="2"
+           android:layout_row="2"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="24dp"
+           android:onClick="fade"
+           android:tag="8"/>
+
+   </GridLayout>
+
+  <RelativeLayout
+
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+      android:id="@+id/relativePop"
+      android:background="#eaff1d"
+      android:visibility="invisible"
+    >
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textColor="#ff444e"
+        android:textAlignment="center"
+        android:padding="30dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+<Button
+    android:layout_below="@+id/msg"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="Play Again?"
+    android:background="#000"
+    android:textColor="#fff"
+    android:onClick="playAgain"
+
+    />
+
+</RelativeLayout>
